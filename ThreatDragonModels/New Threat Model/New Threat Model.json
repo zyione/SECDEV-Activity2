@@ -750,7 +750,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -771,13 +772,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "c2e7f779-9d65-4675-a862-14563df0096c",
+                  "title": "LDAP Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
+                  "mitigation": "Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Verifies the Privelege"
@@ -793,11 +813,15 @@
             },
             "vertices": [
               {
-                "x": 870,
-                "y": -360
+                "x": 890,
+                "y": -380
               },
               {
-                "x": 890,
+                "x": 910,
+                "y": -380
+              },
+              {
+                "x": 940,
                 "y": -360
               }
             ]
@@ -1175,23 +1199,23 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "a91d4503-d483-40a5-864b-083f57c2f4e1",
-                  "title": "LDAP Injection",
+                  "id": "541a69cb-fb14-4ece-9221-175c2dc7ee25",
+                  "title": "Unauthorized Data Access in LDAP Directory",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "LDAP injection is possible, as the user authentication is verified using an LDAP query.",
-                  "mitigation": "Verify that all input is verified for correctness using an approved-list input validation approach.",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of LDAP can allow an attacker to read information not intended for disclosure.",
+                  "mitigation": "Review authorization settings.",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 2,
+                  "number": 8,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 1,
+                "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0
               }
             }
@@ -1381,6 +1405,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 6
+    "threatTop": 8
   }
 }
