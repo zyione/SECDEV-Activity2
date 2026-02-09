@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "6a0e8005-0833-4d64-a37b-61bcc3389e4b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web Application",
@@ -140,7 +140,7 @@
           {
             "position": {
               "x": 680,
-              "y": -325
+              "y": -340
             },
             "size": {
               "width": 60,
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "28817212-34c7-4d11-8a02-5a8d070126fb",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Authorization Provider",
@@ -278,6 +278,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -361,7 +362,6 @@
               ]
             },
             "id": "311cd440-c48e-47ca-94f6-203425f42c9c",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Browser Client",
@@ -733,8 +733,8 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": -330
+                "x": 890,
+                "y": -360
               }
             ]
           },
@@ -785,8 +785,8 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": -260
+                "x": 900,
+                "y": -250
               }
             ]
           },
@@ -889,15 +889,15 @@
             },
             "vertices": [
               {
-                "x": 840,
-                "y": 50
+                "x": 890,
+                "y": -30
               }
             ]
           },
           {
             "position": {
-              "x": 971,
-              "y": -325
+              "x": 1040,
+              "y": -340
             },
             "size": {
               "width": 120,
@@ -918,6 +918,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1001,7 +1002,6 @@
               ]
             },
             "id": "564852c6-1ac3-415a-833f-a6f1f2cf95e8",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "LDAP",
@@ -1020,8 +1020,8 @@
           },
           {
             "position": {
-              "x": 948,
-              "y": -20
+              "x": 1060,
+              "y": 0
             },
             "size": {
               "width": 120,
@@ -1042,6 +1042,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1125,7 +1126,6 @@
               ]
             },
             "id": "701b7497-b91a-4b8f-ad5e-ea507ac62f45",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "SQL Database",
@@ -1194,23 +1194,19 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "bb1d6883-e497-4983-a45c-105bbf55d14d",
+            "id": "b60f0825-ce67-44c7-87d8-a2f4b0312246",
             "source": {
-              "x": 960,
-              "y": -340
+              "x": 1040,
+              "y": 160
             },
             "target": {
-              "x": 920,
-              "y": -50
+              "x": 1030,
+              "y": -390
             },
             "vertices": [
               {
-                "x": 940,
-                "y": -210
-              },
-              {
-                "x": 900,
-                "y": -170
+                "x": 990,
+                "y": -100
               }
             ]
           }
